@@ -4,72 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Frequently Asked Questions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="faq-header">
-    <h1>Frequently Asked Questions</h1>
-    <p>Find quick answers to your common questions</p>
-  </header>
+  <div class="container">
+    <header class="faq-header">
+      <h1>Frequently Asked Questions</h1>
+      <p class="subtitle">Your questions, answered clearly</p>
+    </header>
 
-  <main class="faq-container">
-    <div class="faq-item">
-      <div class="faq-question">
-        <h3>What is the duration of the internship?</h3>
-        <i class="fas fa-chevron-down"></i>
+    <section class="faq-section">
+      <div class="faq-item">
+        <button class="faq-question">What is a remote internship?<span class="icon">+</span></button>
+        <div class="faq-answer">A remote internship allows you to work and learn from home, collaborating online with your team.</div>
       </div>
-      <div class="faq-answer">
-        <p>The internship typically lasts for 4 to 6 weeks depending on the program schedule.</p>
-      </div>
-    </div>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <h3>Is the internship paid?</h3>
-        <i class="fas fa-chevron-down"></i>
+      <div class="faq-item">
+        <button class="faq-question">How do I apply?<span class="icon">+</span></button>
+        <div class="faq-answer">You can apply through our official website or by emailing your resume to our HR department.</div>
       </div>
-      <div class="faq-answer">
-        <p>No, the internship is unpaid but you will receive a certificate upon successful completion.</p>
-      </div>
-    </div>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <h3>Can I work remotely?</h3>
-        <i class="fas fa-chevron-down"></i>
+      <div class="faq-item">
+        <button class="faq-question">Is this internship paid?<span class="icon">+</span></button>
+        <div class="faq-answer">Some internships are paid, while others offer certificates and experience instead of monetary compensation.</div>
       </div>
-      <div class="faq-answer">
-        <p>Yes, the internship is fully remote and can be completed from anywhere with internet access.</p>
-      </div>
-    </div>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <h3>Will I get a certificate?</h3>
-        <i class="fas fa-chevron-down"></i>
+      <div class="faq-item">
+        <button class="faq-question">What skills are required?<span class="icon">+</span></button>
+        <div class="faq-answer">Basic knowledge of HTML, CSS, and JavaScript is required. Familiarity with Git is a plus.</div>
       </div>
-      <div class="faq-answer">
-        <p>Yes, you will receive a certificate after completing all tasks and evaluations.</p>
-      </div>
-    </div>
 
-    <div class="faq-item">
-      <div class="faq-question">
-        <h3>How do I submit my tasks?</h3>
-        <i class="fas fa-chevron-down"></i>
+      <div class="faq-item">
+        <button class="faq-question">How long does the internship last?<span class="icon">+</span></button>
+        <div class="faq-answer">The internship typically lasts 4 to 8 weeks, depending on the role and your availability.</div>
       </div>
-      <div class="faq-answer">
-        <p>You can submit your tasks via GitHub repository link or through a zipped folder.</p>
-      </div>
-    </div>
-  </main>
 
-  <section class="faq-cta">
-    <p>Still have questions?</p>
-    <a href="Task 9/index.html" class="cta-btn">Contact Us</a>
-  </section>
+      <div class="faq-item">
+        <button class="faq-question">Will I get a certificate?<span class="icon">+</span></button>
+        <div class="faq-answer">Yes, all participants receive a verified internship certificate upon successful completion.</div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <p>Still have questions?</p>
+      <a href="Task 9/index.html" class="btn">Contact Us</a>
+    </section>
+  </div>
 
   <script src="script.js"></script>
 </body>
