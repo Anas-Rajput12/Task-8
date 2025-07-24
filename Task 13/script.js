@@ -2,14 +2,22 @@ const faqItems = document.querySelectorAll('.faq-item');
 
 faqItems.forEach(item => {
   const question = item.querySelector('.faq-question');
-  
+  const icon = item.querySelector('.icon');
+
   question.addEventListener('click', () => {
-    const isActive = item.classList.contains('active');
+    const isOpen = item.classList.contains('active');
 
-    faqItems.forEach(el => el.classList.remove('active'));
+    // Close all items
+    faqItems.forEach(i => {
+      i.classList.remove('active');
+      const iIcon = i.querySelector('.icon');
+      if (iIcon) iIcon.textContent = '+';
+    });
 
-    if (!isActive) {
+    // Reopen clicked one if it wasn't already open
+    if (!isOpen) {
       item.classList.add('active');
+      if (icon) icon.textContent = '-';
     }
   });
 });
